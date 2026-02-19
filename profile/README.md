@@ -85,9 +85,9 @@ Our engineering direction includes (but is not limited to):
 
 ## 🔄 Operating Model
 
-1.  Code → Pull Request\
-2.  Review → Merge\
-3.  Automated Reconciliation\
+1.  Code → Pull Request
+2.  Review → Merge
+3.  Automated Reconciliation
 4.  Continuous Infrastructure & Platform Evolution
 
 ------------------------------------------------------------------------
