@@ -40,44 +40,67 @@ gap, we write our own tools.
 
 ### 🏗️ Platform Foundations & Shared Services
 
-Deployment primitives · Observability (metrics, monitoring, distributed
-tracing) · Logging (ELK, Grafana Loki, Vector) · Security (container
-runtime security, eBPF-based visibility and enforcement, policy and
-compliance, network security)
+-   Deployment primitives
+-   Observability: metrics, monitoring, distributed tracing
+-   Logging: ELK, Grafana Loki, Vector
+-   Security:
+    -   Container runtime security
+    -   eBPF-based visibility and enforcement
+    -   Policy and compliance
+    -   Network security
 
 ### 🌐 Networking & Traffic Management
 
-Kubernetes Ingress · Gateway API (NGINX Gateway Fabric, Istio, Envoy
-Gateway) · Service Mesh (Istio, Ambient Mesh, ztunnel) · Routing, TLS
-and service-to-service communication
+-   Kubernetes Ingress
+-   Gateway API: NGINX Gateway Fabric, Istio, Envoy Gateway
+-   Service Mesh: Istio, Ambient Mesh, ztunnel
+-   Routing, TLS and service-to-service communication
 
 ### 🤖 AI Infrastructure
 
-Kubernetes-native AI workloads · GPU orchestration · LLM serving and
-inference · LLM gateways · RAG infrastructure (vector databases,
-embedding services, ingestion pipelines) · AI agent runtime (agent
-orchestration, tool execution, MCP integration)
+-   Kubernetes-native AI workloads
+-   GPU orchestration
+-   LLM serving and inference
+-   LLM gateways
+-   RAG infrastructure:
+    -   Vector databases
+    -   Embedding services
+    -   Ingestion pipelines
+-   AI agent runtime:
+    -   Agent orchestration
+    -   Tool execution
+    -   MCP integration
 
 ### ⚙️ Platform Engineering & GitOps
 
-ArgoCD / Flux · Internal Developer Platform · Self-service provisioning
-· Platform APIs and service catalog · Lifecycle automation · Reusable
-deployment patterns
+-   ArgoCD / Flux
+-   Internal Developer Platform
+-   Self-service provisioning
+-   Platform APIs and service catalog
+-   Lifecycle automation
+-   Reusable deployment patterns
 
 ### 🧠 AI-driven Operations & Operators
 
-AI-driven Kubernetes Operators · Intelligent reconciliation ·
-AI-assisted troubleshooting and incident analysis · Automated
-remediation · Predictive maintenance · Self-healing platforms
+-   AI-driven Kubernetes Operators
+-   Intelligent reconciliation
+-   AI-assisted troubleshooting and incident analysis
+-   Automated remediation
+-   Predictive maintenance
+-   Self-healing platforms
 
 *Deterministic Kubernetes controllers combined with AI-powered analysis
 and decision support.*
 
 ### 💰 Platform Economics & FinOps
 
-Cloud cost allocation · Kubernetes resource metering · Usage tracking
-and billing · Showback / Chargeback · Cost optimization · AI-assisted
-cost analysis · Cost anomaly detection
+-   Cloud cost allocation
+-   Kubernetes resource metering
+-   Usage tracking and billing
+-   Showback / Chargeback
+-   Cost optimization
+-   AI-assisted cost analysis
+-   Cost anomaly detection
 
 ------------------------------------------------------------------------
 
