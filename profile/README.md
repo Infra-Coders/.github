@@ -117,6 +117,23 @@ lifecycle.
 
 ------------------------------------------------------------------------
 
+## 💡 Use Cases
+
+We grow the platform through **end-to-end use cases**. Two kinds are
+welcome:
+
+-   **Platform consumer**: run something *on top of* the platform,
+    e.g. a RAG chatbot over team docs
+-   **Platform builder**: build a capability *into* the platform,
+    e.g. zero-touch cluster bootstrap from Git, or mTLS with Ambient Mesh
+
+Have an idea or a goal you want to learn from?
+
+👉 [**Propose a use case**](https://github.com/Infra-Coders/ic-initiatives/issues/new?template=use-case.yml)
+· [Browse proposals](https://github.com/Infra-Coders/ic-initiatives/issues?q=label%3Atype%2Fuse-case)
+
+------------------------------------------------------------------------
+
 ## 📦 Components
 
 The entry point is
