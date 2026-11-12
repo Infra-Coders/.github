@@ -73,7 +73,7 @@ gap, we write our own tools.
 
 ### ⚙️ Platform Engineering & GitOps
 
--   ArgoCD / Flux
+-   GitOps with Flux (Argo CD as an alternative)
 -   Internal Developer Platform
 -   Self-service provisioning
 -   Platform APIs and service catalog
@@ -134,21 +134,14 @@ Have an idea or a goal you want to learn from?
 
 ------------------------------------------------------------------------
 
-## 📦 Components
+## 🧭 Where to Start
 
-The entry point is
-[**ic-gitops-central**](https://github.com/Infra-Coders/ic-gitops-central).
-
-| Component | Area | Status |
-|-----------|------|--------|
-| [ic-gitops-bootstrap](https://github.com/Infra-Coders/ic-gitops-bootstrap) | GitOps bootstrapping | 🟡 In progress |
-| [ic-aws-stack](https://github.com/Infra-Coders/ic-aws-stack) | Base AWS infrastructure | 🟢 [v0.0.1](https://github.com/Infra-Coders/ic-aws-stack/releases/tag/v0.0.1) |
-| [ic-ingress-stack](https://github.com/Infra-Coders/ic-ingress-stack) | Ingress & routing | 🟢 [v0.0.1](https://github.com/Infra-Coders/ic-ingress-stack/releases/tag/v0.0.1) |
-| [ic-cert-manager-stack](https://github.com/Infra-Coders/ic-cert-manager-stack) | TLS certificates | 🟡 In progress |
-| [ic-monitoring-stack](https://github.com/Infra-Coders/ic-monitoring-stack) | Metrics & monitoring | 🟡 In progress |
-| [ic-logging-stack](https://github.com/Infra-Coders/ic-logging-stack) | Logging | 🟡 In progress |
-| [ic-storage-stack](https://github.com/Infra-Coders/ic-storage-stack) | Storage | 🟡 In progress |
-| [ic-testing-stack](https://github.com/Infra-Coders/ic-testing-stack) | Testing | 🟡 In progress |
+-   [**ic-initiatives**](https://github.com/Infra-Coders/ic-initiatives):
+    use cases, tasks and how we organize the work
+-   [**IC Platform v0.1**](https://github.com/Infra-Coders/ic-initiatives/issues/15):
+    the platform foundation every other use case builds on
+-   [**ic-gitops-central**](https://github.com/Infra-Coders/ic-gitops-central):
+    the GitOps entry point (Flux) for all platform primitives
 
 ------------------------------------------------------------------------
 
