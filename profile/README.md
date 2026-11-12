@@ -1,106 +1,154 @@
 # 🚀 Infra-Coders
 
-> Cloud & Platform Engineering Initiative\
-> Infrastructure as Code • GitOps • Kubernetes • Multi-Cloud • Golang
+> **Building the Kubernetes-driven platform for the AI era**\
+> Kubernetes • GitOps • Platform Engineering • AI Infrastructure • Operators • FinOps
 
 ------------------------------------------------------------------------
 
 ## 🌍 Who We Are
 
-**Infra-Coders** is an engineering initiative focused on designing and
-evolving modern cloud and platform ecosystems.
+**Infra-Coders** is a community of Infrastructure, Platform and DevOps
+engineers who learn by building.
 
-We operate at the intersection of:
+We don't just talk about cloud-native and AI technologies. We build,
+integrate and operate the platform capabilities that make them work.
 
--   Cloud Infrastructure
--   Platform Engineering
--   Kubernetes & Cloud-Native Systems
--   GitOps & Automation
--   Security & Observability
-
-Our goal is to build scalable, resilient, and production-grade platforms
---- designed with long-term sustainability in mind.
+**Our focus: build, integrate and operate the infrastructure that powers the AI era.**
 
 ------------------------------------------------------------------------
 
-## ☁️ Cloud Strategy
+## 🧩 Platform Primitives
 
-We follow a multi-cloud mindset.
+We develop a **modular, Kubernetes-driven platform** as a set of
+reusable **platform primitives**. These are independent capabilities
+that can be developed, deployed, integrated and operated on their own,
+then combined into different platform configurations.
 
-Our focus areas include:
+Each primitive:
 
--   Amazon Web Services (AWS)
--   Google Cloud Platform (GCP)
--   Cloud-agnostic architecture principles
+-   Lives in its own repository and has its own version
+-   Is deployed declaratively through GitOps
+-   States what it depends on and what it provides
+-   Has a named owner and its own roadmap
 
-We aim to design portable and extensible infrastructure foundations that
-can evolve with changing business and technological needs.
+We build on established open-source projects. Where there's a real
+gap, we write our own tools.
 
 ------------------------------------------------------------------------
 
-## ☸️ Cloud-Native Engineering
+## 🗺️ Areas of Development
 
-We embrace Kubernetes-native design patterns and declarative
-infrastructure.
+### 🏗️ Platform Foundations & Shared Services
 
-We:
+Deployment primitives · Observability (metrics, monitoring, distributed
+tracing) · Logging (ELK, Grafana Loki, Vector) · Security (container
+runtime security, eBPF-based visibility and enforcement, policy and
+compliance, network security)
 
--   Build and automate Kubernetes-based platforms
--   Apply GitOps as the operational standard
--   Strive toward writing cloud-native components and tooling in Go
--   Explore and contribute to ecosystem-driven innovation
+### 🌐 Networking & Traffic Management
 
-Our long-term aspiration is to design and develop Kubernetes-native
-systems aligned with modern cloud-native standards.
+Kubernetes Ingress · Gateway API (NGINX Gateway Fabric, Istio, Envoy
+Gateway) · Service Mesh (Istio, Ambient Mesh, ztunnel) · Routing, TLS
+and service-to-service communication
+
+### 🤖 AI Infrastructure
+
+Kubernetes-native AI workloads · GPU orchestration · LLM serving and
+inference · LLM gateways · RAG infrastructure (vector databases,
+embedding services, ingestion pipelines) · AI agent runtime (agent
+orchestration, tool execution, MCP integration)
+
+### ⚙️ Platform Engineering & GitOps
+
+ArgoCD / Flux · Internal Developer Platform · Self-service provisioning
+· Platform APIs and service catalog · Lifecycle automation · Reusable
+deployment patterns
+
+### 🧠 AI-driven Operations & Operators
+
+AI-driven Kubernetes Operators · Intelligent reconciliation ·
+AI-assisted troubleshooting and incident analysis · Automated
+remediation · Predictive maintenance · Self-healing platforms
+
+*Deterministic Kubernetes controllers combined with AI-powered analysis
+and decision support.*
+
+### 💰 Platform Economics & FinOps
+
+Cloud cost allocation · Kubernetes resource metering · Usage tracking
+and billing · Showback / Chargeback · Cost optimization · AI-assisted
+cost analysis · Cost anomaly detection
+
+------------------------------------------------------------------------
+
+## 🎯 Initiatives
+
+| Initiative | Scope |
+|------------|-------|
+| **Platform Foundations** | Kubernetes, GitOps, observability, networking, security |
+| **AI Infrastructure** | GPU workloads, LLM serving, RAG, agent runtime |
+| **Platform Intelligence** | AI-driven operators, self-healing, FinOps |
+
+Each initiative has its own maintainers, roadmap and development
+lifecycle.
+
+------------------------------------------------------------------------
+
+## 📦 Components
+
+The entry point is
+[**ic-gitops-central**](https://github.com/Infra-Coders/ic-gitops-central).
+
+| Component | Area | Status |
+|-----------|------|--------|
+| [ic-gitops-bootstrap](https://github.com/Infra-Coders/ic-gitops-bootstrap) | GitOps bootstrapping | 🟡 In progress |
+| [ic-aws-stack](https://github.com/Infra-Coders/ic-aws-stack) | Base AWS infrastructure | 🟢 [v0.0.1](https://github.com/Infra-Coders/ic-aws-stack/releases/tag/v0.0.1) |
+| [ic-ingress-stack](https://github.com/Infra-Coders/ic-ingress-stack) | Ingress & routing | 🟢 [v0.0.1](https://github.com/Infra-Coders/ic-ingress-stack/releases/tag/v0.0.1) |
+| [ic-cert-manager-stack](https://github.com/Infra-Coders/ic-cert-manager-stack) | TLS certificates | 🟡 In progress |
+| [ic-monitoring-stack](https://github.com/Infra-Coders/ic-monitoring-stack) | Metrics & monitoring | 🟡 In progress |
+| [ic-logging-stack](https://github.com/Infra-Coders/ic-logging-stack) | Logging | 🟡 In progress |
+| [ic-storage-stack](https://github.com/Infra-Coders/ic-storage-stack) | Storage | 🟡 In progress |
+| [ic-testing-stack](https://github.com/Infra-Coders/ic-testing-stack) | Testing | 🟡 In progress |
 
 ------------------------------------------------------------------------
 
 ## 🧭 Engineering Principles
 
-Infra-Coders operates based on the following principles:
+-   **Kubernetes-native**: Kubernetes is the platform foundation
+-   **API-driven**: standardized APIs and declarative configuration
+-   **GitOps-first**: Git is the single source of truth
+-   **Composable**: independent primitives, combined freely
+-   **Open source**: integrate established projects and contribute back
+-   **AI-enabled**: use AI where it adds real value
+-   **Security by design, observability by default**
 
--   Everything as Code
--   Git as a Single Source of Truth
--   Declarative over Imperative
--   Automation First
--   Security by Design
--   Observability by Default
--   Continuous Evolution
-
-------------------------------------------------------------------------
-
-## 🧰 Technology Direction
-
-Our engineering direction includes (but is not limited to):
-
--   Terraform & Infrastructure as Code
--   Kubernetes Ecosystem
--   GitOps Workflows
--   Cloud Platforms (AWS, GCP)
--   Go (for cloud-native development)
--   CI/CD Automation
--   Observability & Reliability Engineering
+*We don't reinvent existing technologies. We build a coherent platform
+ecosystem on top of them.*
 
 ------------------------------------------------------------------------
 
 ## 🔄 Operating Model
 
-1.  Code → Pull Request
-2.  Review → Merge
-3.  Automated Reconciliation
-4.  Continuous Infrastructure & Platform Evolution
+1.  Propose a primitive or capability
+2.  Take ownership → Code → Pull Request
+3.  Review → Merge → Automated reconciliation
+4.  Demo, iterate, evolve
 
 ------------------------------------------------------------------------
 
 ## 🤝 Join Us
 
-We welcome collaboration from engineers passionate about:
+As a member you can:
 
--   Platform Engineering
--   Kubernetes & Cloud-Native
--   Infrastructure Automation
--   Multi-Cloud Architecture
--   Go-based systems development
+-   Propose and lead platform capabilities
+-   Build Kubernetes operators, controllers and automation tools
+-   Experiment with different technology implementations
+-   Share engineering knowledge and hands-on experience
+-   Contribute to open-source projects
+-   Build reusable solutions that are useful beyond our community
+
+Participation is based on genuine interest, ownership and willingness
+to contribute.
 
 📩 Contact: infra-coders@googlegroups.com
 
@@ -108,5 +156,6 @@ We welcome collaboration from engineers passionate about:
 
 ## 📌 Status
 
-Infra-Coders is an evolving initiative focused on experimentation,
-learning, and building production-ready engineering practices.
+Infra-Coders is an evolving initiative. We are moving from shared
+knowledge to shared engineering, building platform capabilities
+together one primitive at a time.
